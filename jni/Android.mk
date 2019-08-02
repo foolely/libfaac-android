@@ -26,7 +26,7 @@ LOCAL_C_INCLUDES :=         \
     $(JNI_PATH)/include
     
 LOCAL_CFLAGS:= -DHAVE_CONFIG_H
-LOCAL_LDFLAGS += -llog
+LOCAL_LDFLAGS += -fPIC -llog
 include $(BUILD_SHARED_LIBRARY)
 
 
